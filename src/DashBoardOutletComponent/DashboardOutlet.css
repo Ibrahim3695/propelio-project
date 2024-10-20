@@ -1,0 +1,40 @@
+.Main-dashboard-div{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(216, 166, 102);
+}
+.dashboard-header{
+    width: 100%;
+    height: 75px;
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+}
+.aside-main-div{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    background-color: rgb(237, 237, 237);
+}
+.dashboard-aside-left{
+    width: 19%;
+    height: 100%;
+    position: fixed;
+    background-color: #FFFFFF;
+}
+.dash-div{
+    width:100%;
+    height: 60%;
+    /* background-color: #f3f4e4; */
+}
+.sup-div{
+    width: 100%;
+    height: 30%;
+    background-color: #eaf4e4;
+}
+.dashboard-aside-right{
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f9;
+}

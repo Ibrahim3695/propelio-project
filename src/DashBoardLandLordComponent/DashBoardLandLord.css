@@ -1,0 +1,54 @@
+.dashBoardMain {
+    width: 77%;
+    height: 100%;
+    /* background: #5f5fe0; */
+    margin-left: 15rem;
+}
+
+.main-top {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: #d8d8ef; */
+    padding-left: 1.8rem;
+}
+
+.token-div {
+    width: 48%;
+    height: 70%;
+    border-radius: 18px;
+    background: #009688;
+}
+
+.total-div {
+    width: 48%;
+    height: 70%;
+    border-radius: 18px;
+    background: #ffe7d1;
+}
+
+.main-bottom {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background: #535363; */
+    padding-left: 1.8rem;
+}
+
+.sales-analytics-div {
+    width: 65%;
+    height: 50%;
+    background: #8484a4;
+    border-radius: 15px;
+
+}
+.numberOfProperty-div {
+    width: 32%;
+    height: 50%;
+    background: #b3b69b;
+    border-radius: 15px;
+
+}
