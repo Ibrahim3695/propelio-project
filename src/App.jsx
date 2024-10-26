@@ -19,6 +19,8 @@ import InputOtp from './OtpInputComponent/InputOtp ';
 import DashBoardLandLord from './DashBoardLandLordComponent/DashBoardLandLord';
 import DashboardOutlet from './DashBoardOutletComponent/DashboardOutlet';
 import Properties from './PropertiesComponent/Properties';
+import Wallet from './walletComponent/Wallet';
+import Payments from './paymentsComponent/Payments';
 
 const router = createBrowserRouter([
   {
@@ -84,11 +86,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/wallet",
-        element: <DashBoardLandLord />,
+        element: <Wallet />,
       },
       {
         path: "/payments",
-        element: <DashBoardLandLord />,
+        element: <Payments />,
       },
       {
         path: "/setting",
