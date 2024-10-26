@@ -1,5 +1,9 @@
 import React from 'react'
 import "./Choose.css"
+import image1 from '../assets/Frame 20.png'
+import image2 from '../assets/Frame 19.png'
+import image3 from '../assets/Frame 21.png'
+import image4 from '../assets/frame 22.png'
 
 const Choose = () => {
     return (
@@ -11,7 +15,7 @@ const Choose = () => {
                 </div>
                 <div class="section6_box">
                     <div class="flexible">
-                        <img src="./img/Frame 20.png" alt="section6_img" />
+                        <img src={image1} alt="section6_img" />
                         <h2>Flexible Financial Options</h2>
                         <p>Propelio provides a range of flexible financing solutions,
                             which includes property trust funds, co-ownership models, and lease-to-own arrangements.
@@ -19,7 +23,7 @@ const Choose = () => {
                     </div>
 
                     <div class="flexible">
-                        <img src="./img/Frame 19.png" alt="section6_img" />
+                        <img src={image2} alt="section6_img" />
                         <h2>Diverse Property Options</h2>
                         <p>From urban condos to suburban villas and rural retreats,
                             we offer diverse range of accommodation options tailored to the needs and preferences of its users.
@@ -27,7 +31,7 @@ const Choose = () => {
                     </div>
 
                     <div class="flexible">
-                        <img src="./img/Frame 21.png" alt="section6_img" />
+                        <img src={image3} alt="section6_img" />
                         <h2>AI Recommendations</h2>
                         <p>Our AI-powered recommendation engine analyses user preferences, budget constraints,
                             and location preferences to provide well suited tailored recommendations to users.
@@ -35,7 +39,7 @@ const Choose = () => {
                     </div>
 
                     <div class="flexible">
-                        <img src="./img/frame 22.png" alt="section6_img" />
+                        <img src={image4} alt="section6_img" />
                         <h2>Transparent Transactions</h2>
                         <p>By leveraging blockchain tech, Propelio ensures
                             transparent and secure property transactions, to mitigate the risks of fraud and dispute in the real estate business.

@@ -1,11 +1,12 @@
 import React from 'react'
+import './App.css'
 import Header from './HeaderComponent/Header'
-
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import Investments from './InvestmentComponent/Investments';
+import Listing from './ListingComponent/Listing'
 import About from './AboutComponent/About';
 import OutletPage from './OutletPageComponents/OutletPage';
 import LandingPage from './LandingPageComponent/LandingPage';
@@ -19,6 +20,8 @@ import InputOtp from './OtpInputComponent/InputOtp ';
 import DashBoardLandLord from './DashBoardLandLordComponent/DashBoardLandLord';
 import DashboardOutlet from './DashBoardOutletComponent/DashboardOutlet';
 import Properties from './PropertiesComponent/Properties';
+import Lease from './ListingComponent/Lease';
+import ComingSoon from './ComingSoonComponent/ComingSoon';
 import Wallet from './walletComponent/Wallet';
 import Payments from './paymentsComponent/Payments';
 
@@ -32,12 +35,24 @@ const router = createBrowserRouter([
         element: <LandingPage />,
       },
       {
+        path: "/Listing",
+        element: <Listing/>,
+      },
+      {
+        path: "/Rent&Lease",
+        element: <Lease />,
+      },
+      {
         path: "/investments",
         element: <Investments />,
       },
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/comingsoon",
+        element: <ComingSoon/>,
       },
 
     ],
@@ -103,7 +118,7 @@ const router = createBrowserRouter([
 
 const App = () => {
   return (
-    <div>
+    <div className='App'>
       <RouterProvider router={router} />
     </div>
   )

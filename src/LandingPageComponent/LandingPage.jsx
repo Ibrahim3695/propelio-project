@@ -4,9 +4,9 @@ import Picture from '../PictureScrollComponent/Picture'
 import Achieve from '../AchieveComponent/Achieve'
 import Featured from '../FeaturedComponent/Featured'
 import OurServive from '../OurSerrviceComponent/OurServive'
-import Faq from '../FaqComponent/Faq'
 import Choose from '../WhyChooseComponent/Choose'
 import Footer from '../FooterComponent/Footer'
+import Accordion from '../FaqComponent/Accordion'
 
 const LandingPage = () => {
   return (
@@ -14,11 +14,11 @@ const LandingPage = () => {
       <Hero />
       <Picture />
       <Achieve />
-      <Featured />
-      <OurServive />
+      <Featured /> 
+      <OurServive /> 
       <Choose />
-      <Faq />
-      <Footer />
+      <Accordion/>
+      <Footer /> 
     </div>
   )
 }
