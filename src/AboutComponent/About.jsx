@@ -1,5 +1,11 @@
 import React from 'react'
 import "./About.css"
+import image1 from '../assets/frame1.png'
+import image2 from '../assets/frame2.png'
+import image3 from '../assets/frame3.png'
+import logo from '../assets/2.png'
+import logo2 from '../assets/3.png'
+import logo3 from '../assets/4.png'
 import Footer from '../FooterComponent/Footer'
 const About = () => {
   return (
@@ -18,17 +24,17 @@ const About = () => {
           </div>
           <div class="Abt-img">
             <div class="frame1">
-              <img src="./img/frame1.png" alt="frame1" />
+              <img src={image1} alt="frame1" />
             </div>
 
             <div class="frame2">
-              <img src="./img/frame2.png" alt="frame2" />
+              <img src={image2} alt="frame2" />
             </div>
 
             <div class="frame3"></div>
 
             <div class="frame4">
-              <img src="./img/frame3.png" alt="frame3" />
+              <img src={image3} alt="frame3" />
             </div>
             <div class="frame5"></div>
           </div>
@@ -39,14 +45,14 @@ const About = () => {
         <div class="section2-sub">
           <h2>What we do</h2>
           <p>At Propelio, we empower individuals from all socio-economic backgrounds to achieve their
-            homeownership dreams through our inclusive platform that provides the tools and <br /> knowledge needed to navigate the real estate market with confidence.
+            homeownership dreams through our inclusive platform that provides the tools and <br />knowledge needed to navigate the real estate market with confidence.
           </p>
         </div>
         <div class="section2-main">
           <div class="box1">
             <div class="img-container">
               <div class="img-container2">
-                <img src="./img/2.png" alt="section2-img" />
+                <img src={logo} alt="section2-img" />
               </div>
               <div>
                 <hr class="img-hr" />
@@ -65,7 +71,7 @@ const About = () => {
           <div class="box2">
             <div class="img-container">
               <div class="img-container2">
-                <img src="./img/3.png" alt="section2-img" />
+                <img src={logo2} alt="section2-img" />
               </div>
               <div>
                 <hr class="img-hr" />
@@ -83,7 +89,7 @@ const About = () => {
           <div class="box3">
             <div class="img-container">
               <div class="img-container2">
-                <img src="./img/4.png" alt="section2-img" />
+                <img src={logo3} alt="section2-img" />
               </div>
             </div>
             <div class="box-writeup">

@@ -1,45 +1,53 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Header.css"
+import logo from '../assets/logo.png'
+import {BsChevronDown, BsList, BsXLg} from "react-icons/bs";
+import { Link } from 'react-router-dom';
+
 
 const Header = () => {
+    let [isOpen, setIsOpen] = useState(false);
+
+    let toggleNavbar = () => {
+        setIsOpen(!isOpen);
+    }
+
     return (
         <div>
             <header id="header">
-                <nav class="nav_content">
-                    <div class="nav_logo">
-                        <h1>PROPELIO</h1>
+                <nav className="nav_content">
+                    <div className="nav_logo">
+                        <Link to="/">
+                         <img src={logo} alt="propelio" />
+                        </Link>
                     </div>
                     
-                    <div class="nav_menu" id="nav_menu">
-                        <ul class="nav_list">
-                            <li class="dropdown">
-                                <a href="./propelio- Listing/listing.html" class="nav_link  dropbtn scroll-link">Listings <i class="bi bi-chevron-down"></i></a>
-                                <div class="dropdown-content">
-                                    <a href="./propelio- Listing/listing.html">For Sale</a>
-                                    <a href="./propelio- Listing/rent&lease.html">Rent & lease</a>
+                    <div className="nav_menu" id="nav_menu">
+                        <ul className={`nav_list ${isOpen ? 'active' : " "}`}>
+                            <li className="dropdown">
+                                <Link to= "" className="nav_link  dropbtn scroll-link">Listings<BsChevronDown className='listingIcon'/></Link>
+                                <div className="dropdown-content">
+                                    <Link to= "/Listing">For Sale</Link>
+                                    <Link to= "/Rent&Lease">Rent & lease</Link>
                                 </div>
                             </li>
 
                             <li>
-                                <a href="./propelio-Investment/investment.html" class="nav_link scroll-link">Investments</a>
+                                <Link to= "/investments" className="nav_link scroll-link">Investments</Link>
                             </li>
-
 
                             <li>
-                                <a href="./propelio- About us/AboutUs.html" class="nav_link scroll-link">About Us</a>
+                                <Link to="/about" className="nav_link scroll-link">About Us</Link>
                             </li>
 
-                            <button class="get">Get Started</button>
-
+                            <button className="get">
+                                <Link to="">Get Started </Link>
+                            </button>
                         </ul>
-                        {/* close Button  */}
-                        <div class="nav_close" id="nav_close">
-                            <i class="bi bi-x-lg"></i>
-                        </div>
                     </div>
                     {/* Toggle Button  */}
-                    <div class="nav_listIcon" id="nav_listIcon">
-                        <i class="bi bi-list"></i>
+                    <div className="menuIcon" id="nav_listIcon" onClick={toggleNavbar}>
+                        <i className={ isOpen ? <BsList /> : <BsXLg /> }></i>
                     </div>
 
                 </nav>
