@@ -20,8 +20,13 @@ import InputOtp from './OtpInputComponent/InputOtp ';
 import DashBoardLandLord from './DashBoardLandLordComponent/DashBoardLandLord';
 import DashboardOutlet from './DashBoardOutletComponent/DashboardOutlet';
 import Properties from './PropertiesComponent/Properties';
+<<<<<<< HEAD
 import Lease from './ListingComponent/Lease';
 import ComingSoon from './ComingSoonComponent/ComingSoon';
+=======
+import Wallet from './walletComponent/Wallet';
+import Payments from './paymentsComponent/Payments';
+>>>>>>> f839effc5df7f80a99def4923132876445e828cb
 
 const router = createBrowserRouter([
   {
@@ -99,11 +104,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/wallet",
-        element: <DashBoardLandLord />,
+        element: <Wallet />,
       },
       {
         path: "/payments",
-        element: <DashBoardLandLord />,
+        element: <Payments />,
       },
       {
         path: "/setting",

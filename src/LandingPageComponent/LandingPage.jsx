@@ -14,7 +14,7 @@ const LandingPage = () => {
       <Hero />
       <Picture />
       <Achieve />
-      {/* <Featured />  */}
+      <Featured /> 
       <OurServive /> 
       <Choose />
       <Accordion/>
