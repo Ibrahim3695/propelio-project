@@ -37,6 +37,7 @@
 .hero_subheading{
     display: grid;
     grid-template-columns:10% 50% 40%;
+    width: 80%;
     opacity: 80%;
     padding: 1rem 1.5rem;
     margin: 1.5rem 4rem;
@@ -72,4 +73,24 @@
     background-color: #ce7e38;
     font-weight: bold;
     width: 80%;
+}
+@media (max-width: 425px){
+    .section_1{
+        width: 120% !important;
+        height: 550px; 
+    }
+    .hero{
+        width: 100%;
+    }
+    .hero_section_title{
+        font-size: 2.3rem;
+    }
+    .empower{
+        width: 100%;
+        padding-inline: 1rem;
+        font-size: 14px;
+        padding-top: 2rem;
+    }
+    .hero_subheading input{
+    }
 }
