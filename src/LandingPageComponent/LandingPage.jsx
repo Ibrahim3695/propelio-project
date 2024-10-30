@@ -2,11 +2,14 @@ import React from 'react'
 import Hero from '../HeroPageComponent/Hero'
 import Picture from '../PictureScrollComponent/Picture'
 import Achieve from '../AchieveComponent/Achieve'
-import Featured from '../FeaturedComponent/Featured'
+import ProductSlider from '../FeaturedComponent/ProductSlider'
 import OurServive from '../OurSerrviceComponent/OurServive'
 import Choose from '../WhyChooseComponent/Choose'
 import Footer from '../FooterComponent/Footer'
-import Accordion from '../FaqComponent/Accordion'
+import Faq from '../FaqComponent/Faq'
+
+
+
 
 const LandingPage = () => {
   return (
@@ -14,10 +17,10 @@ const LandingPage = () => {
       <Hero />
       <Picture />
       <Achieve />
-      <Featured /> 
+      <ProductSlider/>
       <OurServive /> 
-      <Choose />
-      <Accordion/>
+      <Choose/>
+      <Faq/>
       <Footer /> 
     </div>
   )

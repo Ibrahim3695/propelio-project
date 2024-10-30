@@ -5,10 +5,8 @@
     text-align: center;
     background-color: #F4FFFE;
     padding: 2rem;
-    margin-top: 2rem;
 }
 .section_5_box{
-    /*  border: 2px solid purple; */
     height: 550px;
     display: grid;
     grid-template-columns: 50% 25% 25%;

@@ -11,7 +11,7 @@ const Hero = () => {
                         <h1 className="hero_section_title">Fulfilling your <span class="orange">ownership</span> and
                             <span className="orange"> investment</span> dreams.
                         </h1>
-                        <p className="empower">Empowering individuals to achieve their homeownership dreams and <br />
+                        <p className="empower">Empowering individuals to achieve their homeownership dreams and
                             build wealth through accessible and innovative real estate solutions.
                         </p>
                         <div className="hero_subheading">
