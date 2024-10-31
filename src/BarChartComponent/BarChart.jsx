@@ -40,6 +40,7 @@ const BarChart = () => {
         borderWidth: -5,
         borderRadius: 20,
         width: "100%",
+        barThickness: 5
       },
     ],
   };
