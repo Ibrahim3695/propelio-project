@@ -38,9 +38,8 @@ const BarChart = () => {
         ],
         // borderColor: '#009688',
         borderWidth: -5,
-        borderRadius: 20,
-        width: "100%",
-        barThickness: 5
+        borderRadius: 30,
+        barThickness: 7,
       },
     ],
   };
@@ -51,7 +50,7 @@ const BarChart = () => {
       legend: {
         position: 'top',
       },
-      title: {
+      title: {      
         display: true,
         text: 'Sales Analytics by Month',
       },
