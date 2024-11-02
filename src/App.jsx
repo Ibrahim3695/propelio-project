@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 import Header from './HeaderComponent/Header'
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 import Investments from './InvestmentComponent/Investments';
@@ -25,7 +25,7 @@ import ComingSoon from './ComingSoonComponent/ComingSoon';
 import Wallet from './walletComponent/Wallet';
 import Payments from './paymentsComponent/Payments';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <OutletPage />,
