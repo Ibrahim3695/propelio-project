@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import Header from './HeaderComponent/Header'
+
 import {
   createHashRouter,
   RouterProvider,
@@ -36,7 +36,7 @@ const router = createHashRouter([
       },
       {
         path: "/Listing",
-        element: <Listing/>,
+        element: <Listing />,
       },
       {
         path: "/Rent&Lease",
@@ -52,7 +52,7 @@ const router = createHashRouter([
       },
       {
         path: "/comingsoon",
-        element: <ComingSoon/>,
+        element: <ComingSoon />,
       },
 
     ],
