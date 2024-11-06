@@ -1,9 +1,9 @@
 import React from 'react'
 import "./OurServive.css"
 import { Link } from 'react-router-dom';
-import logo from '../assets/invest icon 3.png'
-import logo2 from '../assets/Property 3.png'
-import logo3 from '../assets/Mockup 2.png'
+import investicon from '../assets/invest icon 3.png'
+import property from '../assets/Property 3.png'
+import mockup from '../assets/Mockup 2.png'
 import { BsArrowRight } from "react-icons/bs";
 
 const OurServive = () => {
@@ -20,7 +20,7 @@ const OurServive = () => {
                         <div className="section_5A">
                             <div class="pro-coperation">
                                 <h2 class="section5-title"> Property Cooperative</h2>
-                                <img src={logo} alt="section5-logo" width="100px" height="100px" />
+                                <img src={investicon} alt="section5-logo" width="100px" height="100px" />
                             </div>
                             <p>Property cooperative is an investment option on Propelio. It helps you to co-invest with other property owners in the real estate business,
                                 at the least possible rate, and earn an ROI at the end of the investment period.
@@ -32,7 +32,7 @@ const OurServive = () => {
                     <div className="section5_box2">
                         <div className="eclipse2"></div>
                         <div className="section_5AB">
-                            <img src={logo2} alt="section5-logo" width="97px" height="100px"/>
+                            <img src={property} alt="section5-logo" width="97px" height="100px"/>
                             <h2> Property Listings</h2>
                             <p><Link to="/comingsoon">Read more...</Link></p>
                         </div>
@@ -41,7 +41,7 @@ const OurServive = () => {
                     <div class="section5_box3">
                         <div class="eclipse3"></div>
                         <div class="section_5AB">
-                            <img src={logo3} alt="section5-logo" />
+                            <img src={mockup} alt="section5-logo" />
                             <h2>Property Mockup</h2>
                             <p><Link to="/comingsoon">Read more...</Link></p>
                         </div>

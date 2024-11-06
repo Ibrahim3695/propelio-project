@@ -25,6 +25,7 @@ import ComingSoon from './ComingSoonComponent/ComingSoon';
 import Wallet from './walletComponent/Wallet';
 import Payments from './paymentsComponent/Payments';
 
+
 const router = createHashRouter([
   {
     path: "/",
@@ -54,7 +55,6 @@ const router = createHashRouter([
         path: "/comingsoon",
         element: <ComingSoon/>,
       },
-
     ],
   },
 
