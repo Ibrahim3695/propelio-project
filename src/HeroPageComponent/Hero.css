@@ -1,7 +1,7 @@
 .section_1{
-    width: 100%; 
+    width: 100% !important; 
     height: 604px;
-    background-image: url("./src/assets/section\ bg.png");
+    background-image: url("./src/assets/section/bg.png");
     background-position: center;
     background-size: cover; 
 }
@@ -76,7 +76,7 @@
 }
 @media (max-width: 425px){
     .section_1{
-        width: 120% !important;
+        width: 100% !important;
         height: 550px; 
     }
     .hero{
@@ -90,7 +90,5 @@
         padding-inline: 1rem;
         font-size: 14px;
         padding-top: 2rem;
-    }
-    .hero_subheading input{
-    }
+    }   
 }

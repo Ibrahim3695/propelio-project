@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import "./Picture.css"
-import image1 from '../assets/section2 img 1.png';
-import image2 from '../assets/section2 img2.png';
-import image3 from '../assets/section2img3.png';
+import carouiselimg1 from '../assets/section2 img 1.png';
+import carouselimg2 from '../assets/section2 img2.png';
+import carouselimg3 from '../assets/section2img3.png';
 
 
 const Picture = () => {
 
-   let images = [image1, image2, image3];
+   let images = [carouiselimg1, carouselimg2, carouselimg3];
 
     let [currentIndex, setCurrentIndex] = useState(0);
 

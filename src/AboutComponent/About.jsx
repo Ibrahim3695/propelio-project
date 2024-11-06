@@ -1,11 +1,11 @@
 import React from 'react'
 import "./About.css"
-import image1 from '../assets/frame1.png'
-import image2 from '../assets/frame2.png'
-import image3 from '../assets/frame3.png'
-import logo from '../assets/2.png'
-import logo2 from '../assets/3.png'
-import logo3 from '../assets/4.png'
+import abtimg1 from '../assets/frame1.png'
+import abtimg2 from '../assets/frame2.png'
+import abtimg3 from '../assets/frame3.png'
+import abtlogo1 from '../assets/2.png'
+import abtlogo2 from '../assets/3.png'
+import abtlogo3 from '../assets/4.png'
 import Footer from '../FooterComponent/Footer'
 const About = () => {
   return (
@@ -24,17 +24,17 @@ const About = () => {
           </div>
           <div class="Abt-img">
             <div class="frame1">
-              <img src={image1} alt="frame1" />
+              <img src={abtimg1} alt="frame1" />
             </div>
 
             <div class="frame2">
-              <img src={image2} alt="frame2" />
+              <img src={abtimg2} alt="frame2" />
             </div>
 
             <div class="frame3"></div>
 
             <div class="frame4">
-              <img src={image3} alt="frame3" />
+              <img src={abtimg3} alt="frame3" />
             </div>
             <div class="frame5"></div>
           </div>
@@ -52,7 +52,7 @@ const About = () => {
           <div class="box1">
             <div class="img-container">
               <div class="img-container2">
-                <img src={logo} alt="section2-img" />
+                <img src={abtlogo1} alt="section2-img" />
               </div>
               <div>
                 <hr class="img-hr" />
@@ -71,7 +71,7 @@ const About = () => {
           <div class="box2">
             <div class="img-container">
               <div class="img-container2">
-                <img src={logo2} alt="section2-img" />
+                <img src={abtlogo2} alt="section2-img" />
               </div>
               <div>
                 <hr class="img-hr" />
@@ -89,7 +89,7 @@ const About = () => {
           <div class="box3">
             <div class="img-container">
               <div class="img-container2">
-                <img src={logo3} alt="section2-img" />
+                <img src={abtlogo3} alt="section2-img" />
               </div>
             </div>
             <div class="box-writeup">

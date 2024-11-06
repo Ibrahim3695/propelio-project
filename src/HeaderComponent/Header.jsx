@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./Header.css"
-import logo from '../assets/logo.png'
+import propeliologo from '../asset/logo.png'
 import {BsChevronDown, BsList, BsXLg} from "react-icons/bs";
 import { Link } from 'react-router-dom';
 
@@ -18,14 +18,14 @@ const Header = () => {
                 <nav className="nav_content">
                     <div className="nav_logo">
                         <Link to="/">
-                         <img src={logo} alt="propelio" />
+                         <img src={propeliologo} alt="propelio" />
                         </Link>
                     </div>
                     
                     <div className="nav_menu" id="nav_menu">
                         <ul className={`nav_list ${isOpen ? 'active' : " "}`}>
                             <li className="dropdown">
-                                <Link to= "" className="nav_link  dropbtn scroll-link">Listings<BsChevronDown className='listingIcon'/></Link>
+                                <Link to= "" className="nav_link  dropbtn ">Listings<BsChevronDown className='listingIcon'/></Link>
                                 <div className="dropdown-content">
                                     <Link to= "/Listing">For Sale</Link>
                                     <Link to= "/Rent&Lease">Rent & lease</Link>
@@ -33,11 +33,11 @@ const Header = () => {
                             </li>
 
                             <li>
-                                <Link to= "/investments" className="nav_link scroll-link">Investments</Link>
+                                <Link to= "/investments" className="nav_link ">Investments</Link>
                             </li>
 
                             <li>
-                                <Link to="/about" className="nav_link scroll-link">About Us</Link>
+                                <Link to="/about" className="nav_link">About Us</Link>
                             </li>
 
                             <button className="get">

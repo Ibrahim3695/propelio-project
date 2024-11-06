@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./ProductSlider.css";
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,26 +9,37 @@ import 'swiper/css';
 
 // import other things
 import { BsGeoAlt } from "react-icons/bs";
-import logo1 from '../assets/Frame 31.png';
-import image1 from '../assets/section4a.png';
-import image2 from '../assets/section4b.png';
-import image3 from '../assets/section4c.png';
-import logo2 from '../assets/Vector.png'
+import slidervicon from '../assets/Frame 31.png';
+import sliderimg1 from '../assets/section4a.png';
+import sliderimg2 from '../assets/section4b.png';
+import sliderimg3 from '../assets/section4c.png';
+import vector from '../assets/Vector.png'
 import { BsArrowRight } from "react-icons/bs";
+import Modal from './Modal';
 
 
 //  product data
 let products = [
-  { id: 1, title: "Beracah Gardens Ibadan", location: "Ido-Eruwa, Ibadan , Oyo state", image: image1, km:"500 Sq meter"},
-  { id: 2, title: "3 Bedroom Terrace Duplex + BQ ", location: "Ilaje, Ajah, Lagos state", image: image2, km:"500 Sq meter" },
-  { id: 3, title: "TWO BEDROOM APARTMENT", location: "Abraham Adesanya, Ogombo Road Ng.", image: image3,  km:"500 Sq meter" },
-  {id: 4, title: "Beracah Gardens Ibadan", location: "Ido-Eruwa, Ibadan , Oyo state", image: image1, km:"500 Sq meter"},
-  { id: 2, title: "3 Bedroom Terrace Duplex + BQ ", location: "Ilaje, Ajah, Lagos state", image: image2, km:"500 Sq meter" },
-  { id: 6, title: "TWO BEDROOM APARTMENT", location: "Abraham Adesanya, Ogombo Road Ng.", image: image3,  km:"500 Sq meter" },
+  { id: 1, title: "Beracah Gardens Ibadan", location: "Ido-Eruwa, Ibadan , Oyo state", image: sliderimg1, km:"500 Sq meter"},
+  { id: 2, title: "3 Bedroom Terrace Duplex + BQ ", location: "Ilaje, Ajah, Lagos state", image: sliderimg2, km:"500 Sq meter" },
+  { id: 3, title: "TWO BEDROOM APARTMENT", location: "Abraham Adesanya, Ogombo Road Ng.", image: sliderimg3,  km:"500 Sq meter" },
+  {id: 4, title: "Beracah Gardens Ibadan", location: "Ido-Eruwa, Ibadan , Oyo state", image: sliderimg1, km:"500 Sq meter"},
+  { id: 2, title: "3 Bedroom Terrace Duplex + BQ ", location: "Ilaje, Ajah, Lagos state", image: sliderimg2, km:"500 Sq meter" },
+  { id: 6, title: "TWO BEDROOM APARTMENT", location: "Abraham Adesanya, Ogombo Road Ng.", image: sliderimg3,  km:"500 Sq meter" },
 ];
 
 
 const ProductSlider = () => {
+
+  let {showModal, setShowModal} = useState(false);
+
+  function handleToggle(){
+    setShowModal(!showModal);
+  }
+
+  function onClose(){
+    setShowModal(false)
+  }
   return (
     <section className='section_4'>
       <div className="section4_heading">
@@ -56,13 +67,15 @@ const ProductSlider = () => {
              <img src={product.image} alt={product.title} />
             </div>
             <div  className="project_subheading">
-             <div><img src={logo1} alt="logo" className="video-logo"/></div>
+             <div><img src={slidervicon} alt="logo" className="video-logo"/></div>
              <h4 className="product-name">{product.title}</h4>
              <p className="location"> <BsGeoAlt />{product.location}</p>
              <div className="details">
-                <img src={logo2} alt="vector" class="vector" />
+                <img src={vector} alt="vector" class="vector" />
                 <p>{product.km}</p>
-                <Link>Details</Link>
+                <Link onClick={handleToggle}>Details</Link>
+                {showModal && <Modal onClose ={onClose}  body = {<div>customised content</div>} />}
+                
               </div>
             </div>
             

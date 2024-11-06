@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Footer.css"
-import logo from '../assets/logo.png'
+import propeliologo from '../assets/logo.png'
 import { Link } from 'react-router-dom'
 import { BsInstagram,  BsFacebook, BsTwitter, BsLinkedin } from "react-icons/bs";
     
@@ -9,7 +9,7 @@ const Footer = () => {
         <div>
             <footer>
                 <div class="footer1">
-                    <img src={logo} alt="logo" class="footer-img" />
+                    <img src={propeliologo} alt="logo" class="footer-img" />
                     <ul class="footer-content">
                         <li><Link to='/Listing'>Our products</Link></li>
                         <li><Link to='/about'>About</Link></li>

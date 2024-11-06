@@ -2,7 +2,7 @@ import React from 'react'
 import "./Achieve.css"
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from 'react-router-dom';
-import image from '../assets/section 3img.png';
+import achieveimage from '../assets/section 3img.png';
 
 const Achieve = () => {
     return (
@@ -17,7 +17,7 @@ const Achieve = () => {
             </div>
             <div class="section_3B">
                 <hr />
-                <img src={image} alt="section_3_img" />
+                <img src={achieveimage} alt="section_3_img" />
             </div>
         </section>
     )
