@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "./ProductSlider.css";
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
+// import { Autoplay } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -16,28 +16,29 @@ import sliderimg3 from '../assets/section4c.png';
 import vector from '../assets/Vector.png'
 import { BsArrowRight } from "react-icons/bs";
 import Modal from './Modal';
+import { CiPlay1 } from 'react-icons/ci';
 
 
 //  product data
 let products = [
-  { id: 1, title: "Beracah Gardens Ibadan", location: "Ido-Eruwa, Ibadan , Oyo state", image: sliderimg1, km:"500 Sq meter"},
-  { id: 2, title: "3 Bedroom Terrace Duplex + BQ ", location: "Ilaje, Ajah, Lagos state", image: sliderimg2, km:"500 Sq meter" },
-  { id: 3, title: "TWO BEDROOM APARTMENT", location: "Abraham Adesanya, Ogombo Road Ng.", image: sliderimg3,  km:"500 Sq meter" },
-  {id: 4, title: "Beracah Gardens Ibadan", location: "Ido-Eruwa, Ibadan , Oyo state", image: sliderimg1, km:"500 Sq meter"},
-  { id: 2, title: "3 Bedroom Terrace Duplex + BQ ", location: "Ilaje, Ajah, Lagos state", image: sliderimg2, km:"500 Sq meter" },
-  { id: 6, title: "TWO BEDROOM APARTMENT", location: "Abraham Adesanya, Ogombo Road Ng.", image: sliderimg3,  km:"500 Sq meter" },
+  { id: 1, title: "Beracah Gardens Ibadan", location: "Ido-Eruwa, Ibadan , Oyo state", image: sliderimg1, km: "500 Sq meter" },
+  { id: 2, title: "3 Bedroom Terrace Duplex + BQ ", location: "Ilaje, Ajah, Lagos state", image: sliderimg2, km: "500 Sq meter" },
+  { id: 3, title: "TWO BEDROOM APARTMENT", location: "Abraham Adesanya, Ogombo Road Ng.", image: sliderimg3, km: "500 Sq meter" },
+  { id: 4, title: "Beracah Gardens Ibadan", location: "Ido-Eruwa, Ibadan , Oyo state", image: sliderimg1, km: "500 Sq meter" },
+  { id: 2, title: "3 Bedroom Terrace Duplex + BQ ", location: "Ilaje, Ajah, Lagos state", image: sliderimg2, km: "500 Sq meter" },
+  { id: 6, title: "TWO BEDROOM APARTMENT", location: "Abraham Adesanya, Ogombo Road Ng.", image: sliderimg3, km: "500 Sq meter" },
 ];
 
 
 const ProductSlider = () => {
 
-  let {showModal, setShowModal} = useState(false);
+  let { showModal, setShowModal } = useState(false);
 
-  function handleToggle(){
+  function handleToggle() {
     setShowModal(!showModal);
   }
 
-  function onClose(){
+  function onClose() {
     setShowModal(false)
   }
   return (
@@ -53,42 +54,48 @@ const ProductSlider = () => {
         spaceBetween={20}        // Space between slides
         loop={true}              // Enable looping
         autoplay={{ delay: 3000 }}  // Autoplay with delay
-        modules={[Autoplay]}  // Import Swiper modules
-       breakpoints={{
-          640: { slidesPerView: 1, spaceBetween: 10 }, // Mobile
-          768: { slidesPerView: 2, spaceBetween: 15 }, // Tablet
-          1024: { slidesPerView: 3, spaceBetween: 20 } // Desktop
+        // modules={[Autoplay]}  // Import Swiper modules
+        breakpoints={{
+          640: { slidesPerView: 2, spaceBetween: 10 }, // Mobile
+          768: { slidesPerView: 3, spaceBetween: 15 }, // Tablet
+          1024: { slidesPerView: 4, spaceBetween: 20 } // Desktop
         }}
       >
-      {products.map((product) => (
-        <SwiperSlide key={product.id}>
-          <div className="Project">
-            <div className="imgbox">
-             <img src={product.image} alt={product.title} />
-            </div>
-            <div  className="project_subheading">
-             <div><img src={slidervicon} alt="logo" className="video-logo"/></div>
-             <h4 className="product-name">{product.title}</h4>
-             <p className="location"> <BsGeoAlt />{product.location}</p>
-             <div className="details">
-                <img src={vector} alt="vector" class="vector" />
-                <p>{product.km}</p>
-                <Link onClick={handleToggle}>Details</Link>
-                {showModal && <Modal onClose ={onClose}  body = {<div>customised content</div>} />}
-                
-              </div>
-            </div>
+        {products.map((product) => (
+          <SwiperSlide key={product.id}>
             
-          </div>
-        </SwiperSlide>
-      ))}
+            <div className="Project">
+              <div className="imgbox">
+                <img src={product.image} alt={product.title} />
+              </div>
+
+              <div className="project_subheading">
+
+                <div>
+                  <CiPlay1 />
+                </div>
+
+                <h4 className="product-name">{product.title}</h4>
+                <p className="location"> <BsGeoAlt />{product.location}</p>
+                <div className="details">
+                  <img src={vector} alt="vector" class="vector" />
+                  <p>{product.km}</p>
+                  <Link onClick={handleToggle}>Details</Link>
+                  {showModal && <Modal onClose={onClose} body={<div>customised content</div>} />}
+
+                </div>
+              </div>
+
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
 
       <div className='seebtn'>
-        <button className="see"><Link to="/Listing">See all properties<BsArrowRight className='seeIcon'/></Link></button>
+        <button className="see"><Link to="/Listing">See all properties<BsArrowRight className='seeIcon' /></Link></button>
       </div>
     </section>
-   
+
   );
 };
 

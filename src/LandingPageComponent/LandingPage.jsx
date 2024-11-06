@@ -19,9 +19,9 @@ const LandingPage = () => {
       <Achieve />
       <ProductSlider/>
       <OurServive /> 
-      <Choose/>
-      <Faq/>
-      <Footer /> 
+      {/* <Choose/> */}
+      {/* <Faq/> */}
+      {/* <Footer />  */}
     </div>
   )
 }

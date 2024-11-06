@@ -23,13 +23,15 @@
   padding-bottom: 3rem;
 }
 .productBox{
-  height: 400px;
+  width: 90%;
+  height: 60vh;
   margin-top: 1.5rem;
   padding:0 2rem;
-  grid-template-columns: repeat(3,33%);
+  background-color: antiquewhite;
+  /* grid-template-columns: repeat(4,25rem); */
 }
 .Project{
-  width: 22rem;
+  width: 10%;
   height: 24rem;
   position: relative;
   display: grid; 
@@ -38,6 +40,7 @@
   gap: 5px; 
   box-shadow: 0px 0px 30.5px 0px #00000014;
   position: relative;
+  background-color: #009688;
 }
 .imgbox{
   border-radius: 10px;

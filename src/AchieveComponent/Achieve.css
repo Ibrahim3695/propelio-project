@@ -61,10 +61,14 @@
     
 }
 .section_3B img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: 100%;
     border-radius: 2rem;
-    box-shadow: 6px 6px 0 rgb(228, 223, 223),
-                12px 12px 0 #FF7900,
-                inset 10px 10px 0 rgb(228, 223, 223),
+    box-shadow: 6px 6px 0 white,
+                12px 12px 0 #ff770090,
+                inset 10px 10px 0 white,
                 inset 11px 11px 0 hsl(28, 98%, 50%);
 }
 .exploreIcon{

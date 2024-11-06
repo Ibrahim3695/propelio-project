@@ -20,7 +20,7 @@ const OurServive = () => {
                         <div className="section_5A">
                             <div class="pro-coperation">
                                 <h2 class="section5-title"> Property Cooperative</h2>
-                                <img src={investicon} alt="section5-logo" width="100px" height="100px" />
+                                <img src={investicon} alt="section5-logo" width="90px" height="100px" />
                             </div>
                             <p>Property cooperative is an investment option on Propelio. It helps you to co-invest with other property owners in the real estate business,
                                 at the least possible rate, and earn an ROI at the end of the investment period.

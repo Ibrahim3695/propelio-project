@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import "./Picture.css"
+
 import carouiselimg1 from '../assets/section2 img 1.png';
 import carouselimg2 from '../assets/section2 img2.png';
 import carouselimg3 from '../assets/section2img3.png';
@@ -26,10 +27,8 @@ const Picture = () => {
 
     
     return (
-        <section className="section_2">
-           <div className="carousel">
-               <img src={images[currentIndex]} alt={`carousel-${currentIndex}`} className="carousel-image" />
-            </div>
+        <section className="images-divs">
+            <img src={images[currentIndex]} alt={`carousel-${currentIndex}`}  />
         </section>
     )
 }

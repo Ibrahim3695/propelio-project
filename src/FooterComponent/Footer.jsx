@@ -9,7 +9,8 @@ const Footer = () => {
         <div>
             <footer>
                 <div class="footer1">
-                    <img src={propeliologo} alt="logo" class="footer-img" />
+                    <img src={propeliologo} alt="logo" />
+
                     <ul class="footer-content">
                         <li><Link to='/Listing'>Our products</Link></li>
                         <li><Link to='/about'>About</Link></li>

@@ -1,8 +1,9 @@
 .section_1{
     width: 100% !important; 
     height: 604px;
-    background-image: url("./src/assets/section/bg.png");
+    background-image: url("./hero.png");
     background-position: center;
+    object-fit: cover;
     background-size: cover; 
 }
 .hero_section{
@@ -36,7 +37,7 @@
 }
 .hero_subheading{
     display: grid;
-    grid-template-columns:10% 50% 40%;
+    grid-template-columns:60% 40%;
     width: 80%;
     opacity: 80%;
     padding: 1rem 1.5rem;
@@ -47,11 +48,15 @@
 .hero_subheading input{
     width: 100%;
     border: none;
+    outline: none;
+    font-size: 18px;
+    color: white;
     background-color: transparent;
 }
 .hero_subheading input::placeholder{
     color: white;
-    font-size: 1.5rem;
+    /* font-size: 14px; */
+    font-size: 18px;
 }
 .searchIcon{
     margin-bottom: .1rem;
@@ -61,10 +66,9 @@
 .search{
     background-color: #FF7900;
     width: 70%;
-    padding:.5rem 1.5rem;
+    height: 6vh;
     border-radius: 1.5rem;
     margin-left: 4rem;
-    margin-top: -.5rem;
     color: white;
     border: none;
     cursor: pointer;
@@ -72,7 +76,7 @@
 .search:hover{
     background-color: #ce7e38;
     font-weight: bold;
-    width: 80%;
+    /* width: 80%; */
 }
 @media (max-width: 425px){
     .section_1{
