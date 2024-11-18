@@ -85,8 +85,100 @@
 }
 
 .wallet_balance_container{
-    width: 50%;
-    height: 60px;
+    width: max-content;
+    padding: 20px 30px;
+    height: 100px;
     background: linear-gradient(to right, #006B61,#00D1BE);
     border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.wallet_balance_design_container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.wallet_balance_design_container div{
+    width: 110px;
+    height: calc(100% + 90px);
+    /* background-color: red; */
+    border: 35px solid #D8FBF8; /* Border color and thickness */
+    border-radius: 100%; /* Makes the div circular */
+    border-right-color: transparent; /* Removes the left side to create the "C" */
+    border-bottom-color: transparent; /* Optional: Creates more of a "C" effect */
+    transform: rotate(360deg); /* Optional: Rotate to adjust the opening */
+    box-sizing: border-box; /* Ensures borders are included in dimensions */
+    margin-top: -45px;
+    opacity: 12%;
+    z-index: 1;
+}
+
+.wallet_balance_design_container div:nth-child(2){
+    margin-left: -50px;
+}
+.wallet_balance_design_container div:nth-child(3){
+    margin-left: -50px;
+}
+.wallet_balance_design_container div:nth-child(4){
+    margin-left: -50px;
+}
+
+.wallet_balance_text_container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 20;
+}
+
+.wallet_balance_text_container p{
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.wallet_balance_text_container h3{
+    color: #fff;
+    font-family: "Mulish", sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.wallet_balance_button_container{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    z-index: 20;
+}
+
+.wallet_balance_button_container button{
+    width: max-content;
+    padding: 8px 20px;
+    background-color: #fff;
+    color: green;
+    font-family: "Kanit", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.wallet_transaction_history{
+    width: 100%;
+    height: 300px;
+    background-color: yellow;
 }
