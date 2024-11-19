@@ -48,7 +48,24 @@ const Wallet = () => {
             </div>
           </article>
         </section>
-        <section className='wallet_balance_container'></section>
+        <section className='wallet_balance_container'>
+          <article className='wallet_balance_design_container'>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </article>
+          <article className='wallet_balance_text_container'>
+            <p>Wallet Balance</p>
+            <h3>₦2,425,698</h3>
+          </article>
+          <article className='wallet_balance_button_container'>
+            <button>withdraw</button>
+          </article>
+        </section>
+        <section classname='wallet_transaction_history'>
+
+        </section>
       </div>
     </>
   )
